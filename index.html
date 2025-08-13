@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReCoat Enterprises | Coming Soon</title>
+
+  <!-- Optional Elegant Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Reset */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #f2e5d7, #fffaf3);
+      color: #3f3229;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff8ef;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      border-radius: 24px;
+      padding: 60px;
+      max-width: 1200px;
+      width: 100%;
+      gap: 50px;
+      transition: all 0.4s ease;
+    }
+
+    .text-section {
+      flex: 1;
+    }
+
+    .image-section {
+      flex: 1;
+      text-align: center;
+    }
+
+    .image-section img {
+      width: 100%;
+      max-width: 100%;
+      max-height: 420px;
+      height: auto;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .image-section img:hover {
+      transform: scale(1.04);
+      filter: brightness(1.07);
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #4a2e15; /* Deep wood tone */
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #6a4f3d; /* Muted warm tone */
+      margin-bottom: 32px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #3f3229; /* Soft brown tone */
+    }
+
+    .highlight {
+      color: #763e02; /* Rich wood highlight */
+      font-weight: 600;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* Tablet View */
+    @media (max-width: 1024px) {
+      .container {
+        flex-direction: column;
+        padding: 40px 30px;
+        gap: 30px;
+        text-align: center;
+      }
+
+      .text-section {
+        padding: 0;
+      }
+
+      .image-section img {
+        max-height: 300px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    /* Mobile View */
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 10px;
+      }
+
+      .container {
+        padding: 25px 20px;
+        gap: 20px;
+      }
+
+      .image-section img {
+        max-height: 200px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-section">
+      <h1>Coming Soon...</h1>
+      <h2>“We’re Building Something Great”</h2>
+
+      <p>
+        <span class="highlight">ReCoat – The Future of Wood Finishing is Here.</span>
+        At Wood Finish Studio, we bring life, texture, and elegance to every piece of wood. Based in Jaipur, we specialize in professional wood coating, polishing, and refinishing services for furniture manufacturers, interior designers, contractors, and homeowners.
+      </p>
+
+      <p>
+        <span class="highlight">“ReCoat – From Workshop to Wow!”</span>
+        With a passion for wood and a commitment to excellence, we serve interior designers, furniture manufacturers, carpenters, and homeowners who want lasting quality and elegant finishes.
+      </p>
+
+      <p><span class="highlight">"Quality Coating"</span></p>
+      <p><span class="highlight">"Lasting Impressions"</span></p>
+    </div>
+
+    <div class="image-section">
+      <img src="sirca.jpeg" alt="Wood finishing example" />
+    </div>
+  </div>
+</body>
+</html>
